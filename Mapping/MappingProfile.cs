@@ -13,6 +13,7 @@ namespace aspdotnetblog.Mapping
         {
             //Domain to API Resource
             CreateMap<Make, MakeResource>();
+             CreateMap<Make, KeyValuePairResource>();
              CreateMap<Feature, KeyValuePairResource>();
              CreateMap<Vehicle, SaveVehicleResource>()
                 .ForMember( vr => vr.Contact, operationObj => operationObj.MapFrom(v => new ContactResource {Name=v.ContactName,Email=v.ContactEmail,Phone=v.ContactPhone}))
