@@ -2,8 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace aspdotnetblog.Controllers.Resources
 {
-    public partial class VehicleResource
-    {
+    
         public class ContactResource
         {
             [Required]
@@ -20,5 +19,5 @@ namespace aspdotnetblog.Controllers.Resources
 
 
 
-    }
+    
 }
